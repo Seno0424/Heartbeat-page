@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Սրտի զարկերակ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        audio {
+            margin-top: 20px;
+            display: none; /* скрываем стандартный плеер */
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById("heartbeat_audio");
+            audio.play();
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Իմ սրտի զարկերակ</h2>
+        <p>Իմ սիրո մեխանիկա.<br>
+        Իմ կյանքի, մտքի, հոգու և սրտի բաբախ,<br>
+        թուկ-թուկ, թուկ-թուկ, թուկ-թուկ...</p>
+        <p><strong>Սերը անսպառ է, եթե այն հանդիպում է ճիշտ մարդկանց` SENYAN</strong></p>
+        <audio id="heartbeat_audio" autoplay>
+            <source src="heartbeat_sound.mp3" type="audio/mpeg">
+            Ձեր զննարկիչը չի աջակցում աուդիո նվագարկմանը.
+        </audio>
+    </div>
+</body>
+</html>
